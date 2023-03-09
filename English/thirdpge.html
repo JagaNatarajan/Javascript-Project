@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books for Sale</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<style>
+.button{
+    width: 30%;
+    text-align: center;
+    color: #fff;
+} 
+.button h2{
+    font-size: 40px;
+    font-style:oblique;
+    color: rgb(28, 1, 39);
+    margin-right: -220vh;
+}
+.button h2 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px;
+    background-color:yellow;
+    border-color: rgb(19, 19, 11);
+}
+.button a:hover{
+    letter-spacing: 2px;
+    transition: 0.6s;
+    color: rgb(182, 137, 24);
+}
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1 style="font-style: italic; color: rgb(20, 3, 41); margin-right: 10px; "></h1> </div>
+        <div class="menu">
+            <ul style="align-items: end;"></style>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Cart</a></li>
+</ul>
+</div>
+</div>
+         <div class="container">
+                <div class="swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./tale.jpg"></div>
+            <div class="swiper-slide"><img src="./lord1.jpg"></div>
+            <div class="swiper-slide"><img src="./lord4.jpg"></div>
+            <div class="swiper-slide"><img src="./t3.jpg"></div>
+            <div class="swiper-slide"><img src="./t4.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+               <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+          loop: true,
+        
+          pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+        
+          },
+        
+        
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+            </script>
+            </div>
+            <div>
+        <div class="body">
+        <div class="button">
+           <h2><a href="#">Move to Cart</a></h2>
+        </div>   
+         </div>
+        </div>
+</body>
+</html>
